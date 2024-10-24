@@ -29,7 +29,9 @@ import java.util.Set;
 @Setter
 @Builder
 @Table(name = "server")
+//Server Class
 public class Server {
+    //Autogenrated assigned ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "server_id")
