@@ -19,9 +19,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Builder
 public class ServerDTO {
-
     private Integer id;
-    private Integer serverId;
 
     @NotBlank(message = "First Name must not be null or blank")
     @Size(max = 35)

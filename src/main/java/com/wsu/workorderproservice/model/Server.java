@@ -30,11 +30,10 @@ import java.util.Set;
 @Builder
 @Table(name = "server")
 public class Server {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "server_id")
-    private Integer serverId;
+    private Integer id;
 
     @Column(name = "first_name")
     private String firstName; 

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 //JpaRepository is particularly a JPA specific extension for Repository. It has full API CrudRepository (allows to create, retrieve, update, delete) and PagingAndSortingRepository.
-public interface ServerRepository extends JpaRepository<Server, String> {
+public interface ServerRepository extends JpaRepository<Server, Integer> {
 
     //@Query annotation is used with Spring Data JPA repositories to define custom queries for retrieving data from a database.
     // It allows you to write JPQL (Java Persistence Query Language) or native SQL queries directly within your repository interfaces
