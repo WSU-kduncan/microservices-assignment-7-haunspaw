@@ -14,7 +14,7 @@ public interface ServerRepository extends JpaRepository<Server, String> {
     @Query(nativeQuery = true, value = "SELECT s.server_id AS serverId, s.first_name AS firstName, "
         + "s.last_name AS lastName, s.availability AS availability "
         + "FROM server s "
-        + "WHERE :search IS NULL OR (s.server_id LIKE %:search% OR s.first_name LIKE %:search% OR "
+        + "WHERE :search IS NULL OR (s.server_id LIKE %:search% OR s.first_name LIKE %:search% "
         + "OR s._last_name LIKE %:search%) group by s.server_id")
     Page<Object[]> findBySearch(String search, Pageable pageable);
 }
